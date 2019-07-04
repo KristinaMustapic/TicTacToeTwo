@@ -1,6 +1,5 @@
 import React from 'react';
 import Square from './Square';
-import './App.css';
 
 //EXPLANATION below code
 
@@ -12,7 +11,7 @@ class Board extends React.Component {
   
 
   render() {
-
+    
  let n = 0;
   do{
   n = Math.floor(Math.random()*10);
@@ -23,7 +22,7 @@ class Board extends React.Component {
     if(a === 3){
     return (
       <div>
-        <h1>The board size is {n}</h1>
+        <h1>The Board size is {n}</h1>
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
