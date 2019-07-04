@@ -1,26 +1,45 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Game from './Game';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//EXPLANATION below code
+
+class App extends React.Component {
+
+ render(){
+     return(
+            <div>
+               <Game />
+            </div>
+           );
+         } 
+
+    }
 
 export default App;
+
+
+    /*
+
+  EXPLANATION /App.js
+  _______________________
+
+   App is a class component.
+   It conceptually represents some kind of huge container for everything ,
+   larger one than container that contains our Game "container".
+   
+  parent-child relationship between components / scheme
+        
+          App
+           |
+           ˇ
+          Game
+           |
+           ˇ
+         Board
+           |
+           ˇ
+         Square                    
+         
+  */ 
