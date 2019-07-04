@@ -31,3 +31,68 @@
     transform: rotate(360deg);
   }
 }
+/*-----------------------------------------------------*/
+body {
+  font: 14px "Calibri Light", Futura, sans-serif;
+  margin: 20px;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+
+.square {
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-info {
+
+  margin-left: 20px;
+  color: #8e98ad;
+
+}
+.button {
+  background-color: 999;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.button:hover{
+  background-color: #8e98ad;
+  color: white;
+}
+
+/*
+better responsiveness can be set with @media
+(https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
+*/
